@@ -1,32 +1,25 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
+# Object files
 *.lo
 *.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
 
 # Fortran module files
 *.mod
-*.smod
 
-# Compiled Static libraries
-*.lai
+# Static libraries
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
-*.out
-*.app
+
+# Logs
+*.log
+
+# Ignore netCDF files.
+*.nc
+
+# Ignore python bytecode files
+*.pyc
+
+# Ignore emacs backup files
+*~

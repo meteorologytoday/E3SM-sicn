@@ -1,0 +1,14 @@
+seaice_QU_120km.nc              grid.nc
+culled_graph.info.part.16       graphs/graph.info.part.16
+culled_graph.info.part.32       graphs/graph.info.part.32
+blocks.part.64                  graphs/blocks.part.64
+procs.part.32                   graphs/procs.part.32
+blocks.deactive.part.64         graphs/blocks.deactive.part.64
+LYq_monthly.nc                  forcing/atmosphere_forcing_monthly.nc
+oceanmixed_ice_depth_QU120km.nc forcing/ocean_forcing_monthly.nc
+LYq_six_hourly.2000.nc          forcing/atmosphere_forcing_six_hourly.2000.nc
+snicar_optics_5bnd_mam_c140303_mpas_seaice.nc forcing/snicar_optics_5bnd_mam_c140303_mpas_seaice.nc
+standard_optics_mpas_seaice.nc forcing/standard_optics_mpas_seaice.nc
+snicar_optics_5bnd_snow_and_aerosols.nc forcing/snicar_optics_5bnd_snow_and_aerosols.nc
+snicar_drdt_bst_fit_60_c04262019.nc forcing/snicar_drdt_bst_fit_60_c04262019.nc
+ice_coverage.nc                 forcing/ice_coverage.nc
