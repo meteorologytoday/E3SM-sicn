@@ -1,9 +1,9 @@
 .SUFFIXES: .F .o
-.PHONY: model_forward analysis_members shared
+.PHONY: model_forward analysis_members shared prescribed
 
 all: core_seaice
 
-core_seaice: column_package shared analysis_members model_forward
+core_seaice: column_package shared analysis_members model_forward prescribed
 	ar -ru libdycore.a `find . -type f -name "*.o"`
 
 gen_includes:
@@ -32,6 +32,10 @@ analysis_members: column_package shared
 
 model_forward: column_package shared analysis_members
 	(cd model_forward; $(MAKE))
+
+prescribed: shared 
+	(cd prescribed; $(MAKE))
+
 
 clean:
 	$(RM) *.o *.mod *.f90 libdycore.a

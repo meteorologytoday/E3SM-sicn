@@ -14,6 +14,11 @@ module seaice_core
    use mpas_threading
    use mpas_log, only: mpas_log_write
 
+! ===== [ Tien-Yiao modified begin ] ====
+   use ice_prescribed_mod
+! ===== [ Tien-Yiao modified end ] ====
+
+
    private
    public :: &
         seaice_core_init, &
@@ -132,6 +137,12 @@ module seaice_core
       if (trim(config_initial_condition_type) == "restart") config_do_restart = .true.
 
       call mpas_init_block(domain, dt)
+
+
+      ! ===== [ Tien-Yiao modified begin ] ====
+      call mpas_log_write(' MPI Task $i calling ice_prescribed_init', intArgs=(/domain % dminfo % my_proc_id /))
+      call ice_prescribed_init()
+      ! ===== [ Tien-Yiao modified end ] ====
 
    end function seaice_core_init
 
