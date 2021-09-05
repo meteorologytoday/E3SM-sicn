@@ -403,15 +403,21 @@
       !-----------------------------------------------------------------
       ! If prescribed ice, set hi back to old values
       !-----------------------------------------------------------------
+! ===== [ Tien-Yiao modified begin ] ====
+! I remove the following macro ifdef CCSMCOUPLED
 
-#ifdef CCSMCOUPLED
+      print *, "Test if prescribed_ice is here"
       if (present(prescribed_ice)) then
+        print *, "Yes it is. Then, is it true?"
           if (prescribed_ice) then
+            print *, "Again it is true."
             hin    = worki
             fhocnn = c0             ! for diagnostics
           endif
       endif
-#endif
+
+! endif
+! ===== [ Tien-Yiao modified end ] ====
 
       !-----------------------------------------------------------------
       ! Compute fluxes of water and salt from ice to ocean.

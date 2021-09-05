@@ -3,7 +3,7 @@
 
 all: core_seaice
 
-core_seaice: column_package shared analysis_members model_forward prescribed
+core_seaice: column_package prescribed shared analysis_members model_forward
 	ar -ru libdycore.a `find . -type f -name "*.o"`
 
 gen_includes:
@@ -33,7 +33,7 @@ analysis_members: column_package shared
 model_forward: column_package shared analysis_members
 	(cd model_forward; $(MAKE))
 
-prescribed: shared 
+prescribed: shared  
 	(cd prescribed; $(MAKE))
 
 

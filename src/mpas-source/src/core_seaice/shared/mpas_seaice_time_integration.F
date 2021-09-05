@@ -45,6 +45,10 @@ contains
        itimestep, &
        ierr)!{{{
 
+    ! ===== [ Tien-Yiao modified begin ] ====
+    use ice_prescribed_mod
+    ! ===== [ Tien-Yiao modified end ] ====
+
     use mpas_timer
 
     use seaice_diagnostics, only: &
@@ -127,6 +131,10 @@ contains
        call seaice_perform_unit_test(domain)
        return
     endif
+
+    ! ===== [ Tien-Yiao modified begin ] ====  
+    call seaice_run_prescribed_ice(domain)
+    ! ===== [ Tien-Yiao modified end ] ====
 
     ! pre dynamics column physics
     call mpas_timer_start("Column pre-dynamics")

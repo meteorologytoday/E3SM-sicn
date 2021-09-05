@@ -1616,7 +1616,9 @@ contains
                freezeOnset(iCell), &
                dayOfYear, &
                abortFlag, &
-               abortMessage)
+               abortMessage, &  ! Tien-Yiao Modified
+               .true. &  ! Tien-Yiao Modified (prescriebed_ice)
+               )
           call colpkg_get_warnings(warnings)
           call column_write_warnings(warnings)
 
