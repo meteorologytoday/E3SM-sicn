@@ -525,22 +525,20 @@
 
 
 <!-- Tien-Yiao Modified -->
-<!-------------------------------------------------------------->
-<!-- Prescribed namelist-                                    --->
-<!-- these will be set explicitly by calls to build-namelist --->
-<!-------------------------------------------------------------->
+<!-- prescribed_ice -->
+<config_prescribed_ice_stream_year_first>-999</config_prescribed_ice_stream_year_first>
+<config_prescribed_ice_stream_year_last>-999</config_prescribed_ice_stream_year_last>
+<config_prescribed_ice_model_year_align>-999</config_prescribed_ice_model_year_align>
+<config_prescribed_ice_stream_fldvarname>'ice_cov'</config_prescribed_ice_stream_fldvarname>
+<config_prescribed_ice_stream_fldfilename>'unset'</config_prescribed_ice_stream_fldfilename>
+<config_prescribed_ice_stream_domtvarname>'time'</config_prescribed_ice_stream_domtvarname>
+<config_prescribed_ice_stream_domxvarname>'xc'</config_prescribed_ice_stream_domxvarname>
+<config_prescribed_ice_stream_domyvarname>'yc'</config_prescribed_ice_stream_domyvarname>
+<config_prescribed_ice_stream_domareaname>'area'</config_prescribed_ice_stream_domareaname>
+<config_prescribed_ice_stream_dommaskname>'mask'</config_prescribed_ice_stream_dommaskname>
+<config_prescribed_ice_stream_domfilename>'unset'</config_prescribed_ice_stream_domfilename>
+<config_prescribed_ice_stream_mapread>'NOT_SET'</config_prescribed_ice_stream_mapread>
+<config_prescribed_ice_stream_fill>false</config_prescribed_ice_stream_fill>
 
-<stream_domfilename> "unset"</stream_domfilename>
-<stream_fldfilename> "unset"</stream_fldfilename>
-<stream_fldvarname > "unset"</stream_fldvarname>
-<stream_year_first > -999   </stream_year_first>
-<stream_year_last  > -999   </stream_year_last>
-<model_year_align  > -999   </model_year_align>
-
-<stream_domtvarname> "time" </stream_domtvarname>
-<stream_domxvarname> "xc"   </stream_domxvarname>
-<stream_domyvarname> "yc"   </stream_domyvarname>
-<stream_domareaname> "area" </stream_domareaname>
-<stream_dommaskname> "mask" </stream_dommaskname>
 
 </namelist_defaults>
