@@ -406,6 +406,25 @@ Valid values: true or .false
 Default: Defined in namelist_defaults.xml
 </entry>
 
+<!-- Tien-Yiao Modified begin -->
+<entry id="config_use_prescribed_ice" type="logical"
+	category="use_sections" group="use_sections">
+If true use prescribed ice mode.
+
+Valid values: true or .false
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_use_prescribed_ice_forcing" type="logical"
+	category="use_sections" group="use_sections">
+If true use prescribed ice mode forcing through the MPAS streams system.
+
+Valid values: true or .false
+Default: Defined in namelist_defaults.xml
+</entry>
+
+
+<!-- Tien-Yiao Modified end -->
 
 <!-- forcing -->
 
@@ -3395,5 +3414,113 @@ Backward offset for filename timestamps when writing the output stream
 Valid values: A time interval in YYYY-MM-DD_hh:mm:ss.
 Default: Defined in namelist_defaults.xml
 </entry>
+
+<!-- Tien-Yiao modified -->
+<!-- prescribed_ice -->
+
+<entry id="config_prescribed_ice_stream_year_first" type="integer"
+	category="prescribed_ice" group="prescribed_ice">
+Prescribed ice stream parameter for e3sm sea ice driver.
+
+Valid values: Unknown
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_prescribed_ice_stream_year_last" type="integer"
+	category="prescribed_ice" group="prescribed_ice">
+Prescribed ice stream parameter for e3sm sea ice driver.
+
+Valid values: Unknown
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_prescribed_ice_model_year_align" type="integer"
+	category="prescribed_ice" group="prescribed_ice">
+Prescribed ice stream parameter for e3sm sea ice driver.
+
+Valid values: Unknown
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_prescribed_ice_stream_fldvarname" type="char*1024"
+	category="prescribed_ice" group="prescribed_ice">
+Prescribed ice stream parameter for e3sm sea ice driver.
+
+Valid values: Unknown
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_prescribed_ice_stream_fldfilename" type="char*1024"
+	category="prescribed_ice" group="prescribed_ice">
+Prescribed ice stream parameter for e3sm sea ice driver.
+
+Valid values: Unknown
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_prescribed_ice_stream_domtvarname" type="char*1024"
+	category="prescribed_ice" group="prescribed_ice">
+Prescribed ice stream parameter for e3sm sea ice driver.
+
+Valid values: Unknown
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_prescribed_ice_stream_domxvarname" type="char*1024"
+	category="prescribed_ice" group="prescribed_ice">
+Prescribed ice stream parameter for e3sm sea ice driver.
+
+Valid values: Unknown
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_prescribed_ice_stream_domyvarname" type="char*1024"
+	category="prescribed_ice" group="prescribed_ice">
+Prescribed ice stream parameter for e3sm sea ice driver.
+
+Valid values: Unknown
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_prescribed_ice_stream_domareaname" type="char*1024"
+	category="prescribed_ice" group="prescribed_ice">
+Prescribed ice stream parameter for e3sm sea ice driver.
+
+Valid values: Unknown
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_prescribed_ice_stream_dommaskname" type="char*1024"
+	category="prescribed_ice" group="prescribed_ice">
+Prescribed ice stream parameter for e3sm sea ice driver.
+
+Valid values: Unknown
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_prescribed_ice_stream_domfilename" type="char*1024"
+	category="prescribed_ice" group="prescribed_ice">
+Prescribed ice stream parameter for e3sm sea ice driver.
+
+Valid values: Unknown
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_prescribed_ice_stream_mapread" type="char*1024"
+	category="prescribed_ice" group="prescribed_ice">
+Prescribed ice stream parameter for e3sm sea ice driver.
+
+Valid values: Unknown
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_prescribed_ice_stream_fill" type="logical"
+	category="prescribed_ice" group="prescribed_ice">
+Prescribed ice stream parameter for e3sm sea ice driver.
+
+Valid values: Unknown
+Default: Defined in namelist_defaults.xml
+</entry>
+
 
 </namelist_definition>
