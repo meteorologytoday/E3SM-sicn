@@ -1,5 +1,5 @@
 .SUFFIXES: .F .o
-.PHONY: model_forward analysis_members shared prescribed
+.PHONY: prescribed model_forward analysis_members shared
 
 all: core_seaice
 
@@ -33,7 +33,7 @@ analysis_members: column_package shared
 model_forward: column_package shared analysis_members
 	(cd model_forward; $(MAKE))
 
-prescribed: shared  
+prescribed:  
 	(cd prescribed; $(MAKE))
 
 

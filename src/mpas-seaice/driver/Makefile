@@ -4,7 +4,10 @@ OBJS = ice_comp_mct.o \
        mpassi_cpl_indices.o \
        mpassi_mct_vars.o
 
-ICE_SHARED_INCLUDES=-I../core_seaice/column -I../core_seaice/forward_model -I../core_seaice/analysis_members -I../framework -I../operators
+include_path=../../mpas-source/src/core_seaice
+
+#ICE_SHARED_INCLUDES=-I../core_seaice/column -I../core_seaice/forward_model -I../core_seaice/analysis_members -I../framework -I../operators
+ICE_SHARED_INCLUDES=-I$(include_path)/column -I$(include_path)/forward_model -I$(include_path)/analysis_members -I$(include_path)/framework -I$(include_path)/operators
 
 all: $(OBJS)
 
